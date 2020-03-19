@@ -20,7 +20,6 @@ void	ft_vprintf(const char *fmt, va_list arg, t_flags *flag)
 
 	temp = 0;
 	j = ft_gotoflags(fmt);
-	i = 0;
 	write(1, fmt, j);
 	flag->write = flag->write + j;
 	if (fmt[j] == '\0')
