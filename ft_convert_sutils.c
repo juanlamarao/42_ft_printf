@@ -18,9 +18,7 @@ void	ft_convert_sutils(t_flags *flag, int len)
 	{
 		if (flag->precision > 0 && flag->precision < len)
 			flag->space = flag->space - flag->precision;
-		else if (flag->precision == 0)
-			flag->space = flag->space;
-		else
+		else if (!flag->precision == 0)
 			flag->space = flag->space - len;
 	}
 	if (flag->nspace > 0)
